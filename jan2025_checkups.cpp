@@ -59,7 +59,7 @@ int main() {
             ll sum_right = 0;
             ll sum_left = 0;
 
-            for (int i = specie.size()-1; i >= 0; i--) {
+            for (ll i = specie.size()-1; i >= 0; i--) {
                 
                 pair<ll, ll> cur = specie[i];
 
@@ -81,7 +81,7 @@ int main() {
 
                     }
 
-                    sum_left += lefts * (cur.first + 1);
+                    sum_left = lefts * (cur.first + 1);
 
                     //cout << "At " << cur.first << " Sum left " << sum_left << " | Sum right " << sum_right << endl;
                     ans += sum_left;
