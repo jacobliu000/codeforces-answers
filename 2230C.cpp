@@ -28,6 +28,7 @@ int main() {
         ll unique = n - non_unique;
         ans += min(unique, unique_placed);
 
+        if (ans < 3) ans = 0;
         cout << ans << endl;
 
     }
